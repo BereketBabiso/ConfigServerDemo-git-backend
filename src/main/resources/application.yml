@@ -1,0 +1,13 @@
+server:
+  port: 8191
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/BereketBabiso/Config-Server1
+          skip-ssl-validation: true
+          #username: 
+          #password: 
+          search-paths:
+          - '*service'
